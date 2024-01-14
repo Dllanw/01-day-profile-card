@@ -1,0 +1,87 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ......................... 12
+2. Variables ...................... 16
+3. Estilos generales .............. 27
+4. Créditos ....................... 37
+-------------------- */
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+/* ----- Variables ----- */
+:root {
+	--primary-font-family: 'Montserrat', sans-serif;
+	--body-bg-color: #212020;
+	--card-bg-color: #242323;
+	--card-bg-social: #1f1e1e;
+	--text-color: #c2c2c2;
+	--fb-bg-color: #456da4;
+	--li-bg-color: #0984c6;
+	--ig-bg-color: #006184;
+	--lh-text: 22px;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+	font-family: var(--primary-font-family);
+	background-color: var(--body-bg-color);
+	color: var(--text-color);
+	line-height: var(--lh-text);
+	height: 100vh;
+
+	display: grid;
+	place-content: center;
+}
+
+img {
+	max-width: 150px;
+	display: inline-block;
+}
+/* UTILITIES */
+.no-margin {
+	margin: 0;
+}
+.border-radius {
+	border-radius: 50%;
+}
+/* ------------------------
+Diseño: UIDesign Daily🎨
+Desarrollo: Frontend Club🔥
+--------------------------- */
+
+.card {
+	max-inline-size: 22rem;
+	min-block-size: 20rem;
+	text-align: center;
+	background-color: var(--card-bg-color);
+	padding: 3rem 3rem 2rem 3rem;
+	border-top-right-radius: 1rem;
+	border-top-left-radius: 1rem;
+}
+.card--logo img{
+	margin-top: 1rem ;
+}
+.card--from {
+	display: inline-block;
+	border-radius: 1rem;
+	background-color: var(--card-bg-social);
+	padding: 0.4rem 0.6rem ;
+	color: rgba(194, 194, 194, 0.6);
+}
+.card--paragrahp {
+	padding: 2rem 2rem 0rem 2rem;
+}
+.card--socials {
+	display: flex;
+	justify-content: space-around;
+	height: 28px;
+	background-color: var(--card-bg-social);
+	padding: 2.5rem;
+	border-bottom-left-radius: 1rem ;
+	border-bottom-right-radius: 1rem ;
+}
